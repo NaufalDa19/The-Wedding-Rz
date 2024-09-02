@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animasi Halaman</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <h4 class="animate__animated animate__zoomInDown animate__slow">
+          Kepada <span>Bapak/Ibu/Saudara/i, </span>
+        </h4>
+        <h1
+          class="animate__animated animate__zoomIn animate__slow animate__delay-2s"
+        >
+          Reza & Rina
+        </h1>
+        <p class="animate__animated animate__zoomInUp animate__slow">
+          Akan melangsungkan perrnikahan dalam:
+        </p>
+        <div
+          class="simply-countdown animate__animated animate__bounceIn animate__slower animate__delay-2s"
+        ></div>
+        <a
+          href="#home"
+          class="btn btn-lg mt-4 animate__animated animate__fadeIn animate__slower animate__delay-2s"
+          id="nextPage"
+        >
+          Lihat Undangan
+        </a>
+      </main>
+    </section>
+
+    <script>
+      document
+        .getElementById("nextPage")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          document.body.innerHTML = `
+        <div class="container">
+          <h1 id="text" class="animate__animated animate__bounceIn">Terima Kasih Telah Hadir</h1>
+        </div>
+      `;
+        });
+    </script>
+  </body>
+</html>
