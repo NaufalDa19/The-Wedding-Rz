@@ -457,9 +457,9 @@ body {
   background-color: transparent;
 }
 
-/* footer {
-  padding: 3rem;
-  background-color: var(--pink);
+footer {
+  padding: 1rem;
+  background-color: #295f98;
   color: white;
 }
 
@@ -477,7 +477,7 @@ footer li {
   list-style: none;
   display: inline;
   margin: 0.5rem;
-} */
+}
 
 .audio-icon-wrapper {
   width: 4rem;
